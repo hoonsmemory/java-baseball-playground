@@ -45,7 +45,11 @@ public class SetTest {
     @ParameterizedTest
     @CsvSource(value = {"1:true", "2:true", "3:true", "4:false", "5:false"}, delimiter = ':')
     void test3(int number, boolean check) {
-        org.junit.jupiter.api.Assertions.assertEquals(numbers.contains(number), check); 
+        org.junit.jupiter.api.Assertions.assertEquals(numbers.contains(number), check);
+    }
+
+    void test4() {
+
     }
 
 
