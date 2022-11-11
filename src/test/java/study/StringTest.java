@@ -37,7 +37,7 @@ public class StringTest {
         String data1 = "abc";
         int length = data1.length();
         assertThatThrownBy(() -> data1.charAt(3)).isInstanceOf(StringIndexOutOfBoundsException.class)
-                .hasMessageContaining("String index out of range: %d", length); 
+                .hasMessageContaining("String index out of range: %d", length);
     }
 
 
